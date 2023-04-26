@@ -80,11 +80,7 @@
             String email = request.getParameter("email");
             String phone = request.getParameter("phone");
             String password = request.getParameter("password");
-            String gender;
-            if (request.getParameter("female") == "on") {
-                gender = "F";
-            }
-            else gender = "M";
+            String gender = request.getParameter("gender");
         %>
         <%
             User user = new User(firstName, lastName, email, phone, gender, password);
@@ -106,8 +102,8 @@
             <p>Password: <%=password%></p>
             <p>Gender: <%=gender%></p>
         </div>
-        <button class="browse-button" onclick="window.location.href = 'index.html';">Browse products</button>
-        <button href="main.jsp"></button>
+        <button class="browse-button" onclick="window.location.href = 'index.jsp';">Browse products</button>
+        <button onclick="window.location.href = 'main.jsp';">Main Page</button>
     </div>
         
     </body>
