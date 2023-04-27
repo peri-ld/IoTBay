@@ -12,7 +12,7 @@
         <title>Index Page</title>
     </head>
     <body>
-        <p>Hello does this work possibly/p>
+        <p>Hello does this work possibly please</p>
         <a href="register.jsp">Register</a>
     </body>
 </html>
