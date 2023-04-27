@@ -14,5 +14,6 @@
     <body>
         <p>Hello does this work possibly please</p>
         <a href="register.jsp">Register</a>
+        <a href="login.jsp">Register</a>
     </body>
 </html>
