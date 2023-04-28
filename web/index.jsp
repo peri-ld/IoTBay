@@ -12,7 +12,7 @@
         <title>Index Page</title>
     </head>
     <body>
-        <p> Hi </p>
+       
         <p>Pages: [Implement this better soon]</p>
         <a href="register.jsp">Register</a>
         <a href="login.jsp">Login</a>
