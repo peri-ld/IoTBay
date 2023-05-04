@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(135deg, #cceeff, #00498c);
+    display: block;
+}
+.inner-header{
+    width:1000px;
+    height:100%;
+    display:block;
+    margin:0 auto;
+}
+.logo-container{
+    height: 100%;
+    display: table;
+    float:left;
+}
+.navigation{
+    float:right;
+    height:100%;
+}
+.navigation a{
+    height:100%;
+    display: table;
+    float: left;
+    padding:0px 20px;
+    vertical-align:middle;
+}
+.navigation a li{
+    color: black;
+    display: table-cell;
+    vertical-align:middle;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px; 
+    height: 200px;
+    /*border:3px solid #000000*/
+    border-radius: 5px;
+}
+.upperbodycontainer
+{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+}
+.text{
+    flex-basis: 600px;
+}
+.bodycontainer{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 10vh;
+    background: linear-gradient(135deg, #cceeff, #00498c);
+}
+.header .index-register-button input{
+height: 100%;
+width: 100%;
+outline: none;
+color: #000;
+font-size: 18px;
+font-weight: 700;
+border-radius: 5px;
+letter-spacing: 1px;
+background: linear-gradient(135deg, #cceeff, #00498c);
+cursor: pointer;
+}
+.header .index-register-button input:hover{
+background: linear-gradient(135deg, #00498c, #cceeff);
+}
+.header .index-login-button input{
+height: 100%;
+width: 100%;
+outline: none;
+color: #000;
+font-size: 18px;
+font-weight: 700;
+border-radius: 5px;
+letter-spacing: 1px;
+background: linear-gradient(135deg, #cceeff, #00498c);
+cursor: pointer;
+}
+.header .index-login-button input:hover{
+background: linear-gradient(135deg, #00498c, #cceeff);
+}
+.featured-products .featured-product-title{
+height: 80px;
+width: 100%;
+font-family: 'roboto', sans-serif;
+font-size: 40;
+font-weight: 500;
+text-align: center;
+background: linear-gradient(135deg, #00498c, #cceeff);
+}
