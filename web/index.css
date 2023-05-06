@@ -20,6 +20,10 @@
     display: table;
     float:left;
 }
+.logo-container img{
+    width: auto;
+    height: 80px;
+}
 .navigation{
     float:right;
     height:100%;
@@ -36,7 +40,7 @@
     display: table-cell;
     vertical-align:middle;
 }
-img{
+body container img{
     max-width: 100%;
     max-height: 100%;
     width: 300px; 
@@ -53,8 +57,16 @@ img{
     justify-content: flex-end;
     align-items: center;
 }
+.Landing_Picture{
+    padding-right: 10%;
+}
+.Landing_Picture > img{
+    height:auto;
+    width:auto;
+}
 .text{
     flex-basis: 600px;
+    margin-left:40px;
 }
 .bodycontainer{
     display: flex;
@@ -65,41 +77,41 @@ img{
     background: linear-gradient(135deg, #cceeff, #00498c);
 }
 .header .index-register-button input{
-height: 100%;
-width: 100%;
-outline: none;
-color: #000;
-font-size: 18px;
-font-weight: 700;
-border-radius: 5px;
-letter-spacing: 1px;
-background: linear-gradient(135deg, #cceeff, #00498c);
-cursor: pointer;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #cceeff, #00498c);
+    cursor: pointer;
 }
 .header .index-register-button input:hover{
 background: linear-gradient(135deg, #00498c, #cceeff);
 }
 .header .index-login-button input{
-height: 100%;
-width: 100%;
-outline: none;
-color: #000;
-font-size: 18px;
-font-weight: 700;
-border-radius: 5px;
-letter-spacing: 1px;
-background: linear-gradient(135deg, #cceeff, #00498c);
-cursor: pointer;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #cceeff, #00498c);
+    cursor: pointer;
 }
 .header .index-login-button input:hover{
 background: linear-gradient(135deg, #00498c, #cceeff);
 }
 .featured-products .featured-product-title{
-height: 80px;
-width: 100%;
-font-family: 'roboto', sans-serif;
-font-size: 40;
-font-weight: 500;
-text-align: center;
-background: linear-gradient(135deg, #00498c, #cceeff);
+    height: 80px;
+    width: 100%;
+    font-family: 'roboto', sans-serif;
+    font-size: 40;
+    font-weight: 500;
+    text-align: center;
+    background: linear-gradient(135deg, #00498c, #cceeff);
 }

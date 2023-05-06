@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : 09/04/2023, 9:09:29 PM
-    Author     : peril
+    Author     : Aaron
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,7 +9,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <title>TODO supply a title</title>
+        <title>Index page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
     </head>
@@ -17,7 +17,7 @@
         <div class="header">
                 <div class="inner-header">
                     <div class="logo-container">
-                        
+                        <img src="Photos/IoTBayLogo.png">
                     </div>
                     <div class="navigation">
                         <div class="index-login-button">
@@ -31,7 +31,10 @@
                 </div>
             </div>
             <div class="upperbodycontainer">
-                <img src="IoT-devices.jpg">
+                <div class="Landing_Picture">
+                    <img src="Photos/IoT-devices.jpg">
+                </div>
+
                 <div class="text">
                     <h1>What are IOT devices?</h1>
                     <h3>IoT devices are pieces of hardware, such as sensors, 
