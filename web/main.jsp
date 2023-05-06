@@ -85,17 +85,21 @@
         
     <div class="centre">
         <div><h1>Hi, ${User.firstName} </h1></div>
+        <!--<table id="user_info">
+               <thead><th>First Name</th><th>Last Name</th><th>Email</th><th>Phone</th><th>Gender</th></thead> 
+               <tr><td>${user.firstName}</td><td>${user.lastName}</td><td>${user.email}</td><td>${user.phone}</td><td>${user.gender}</td></tr>
+               </table> -->
         <div class="details-box">
             <h2>Your Account:</h2>
-            <p><br>First Name: ${User.firstName}</p>
-            <p>Last Name: ${User.lastName}</p>
-            <p>Email: ${User.email}</p>
-            <p>Phone Number: ${User.phone}</p>
-            <p>Password: ${User.password}</p>
-            <p>Gender: ${User.gender}</p>
+            <p><br>First Name: ${user.firstName}</p>
+            <p>Last Name: ${user.lastName}</p>
+            <p>Email: ${user.email}</p>
+            <p>Phone Number: ${user.phone}</p>
+            <p>Password: ${user.password}</p>
+            <p>Gender: ${user.gender}</p>
         </div>
         <button>Edit</button>
-        <button class="browse-button" onclick="window.location.href = 'index.html';">Browse products</button>
+        <button class="browse-button" onclick="window.location.href = 'edit.jsp';">Browse products</button>
     </div>
     </body>
 </html>
