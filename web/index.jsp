@@ -21,11 +21,11 @@
                     </div>
                     <div class="navigation">
                         <div class="index-login-button">
-                            <input type="submit" value="Login" onclick = "window.location.href = 'login.html'">
+                            <input type="submit" value="Login" onclick = "window.location.href = 'login.jsp'">
                         </div>
                         <div class="index-register-button">
-                            <input type="submit" value="Register" onclick = "window.location.href = 'register.html'">
-                            <input type="submit" value="Logout" onclick = "window.location.href = 'logout.html'"> <!--conditional login/logout buttons-->
+                            <input type="submit" value="Register" onclick = "window.location.href = 'register.jsp'">
+                            <input type="submit" value="Logout" onclick = "window.location.href = 'logout.jsp'"> <!--conditional login/logout buttons-->
                         </div>
                       </div>
                 </div>
@@ -62,5 +62,6 @@
                         <p>Smart Thermostat</p>
                     </div>
         </div>
+        <input type="submit" value="Contact Us" onclick = "window.location.href = 'support.jsp'">
     </body>
 </html> 
