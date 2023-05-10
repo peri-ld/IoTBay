@@ -102,7 +102,7 @@
         color: white;
         text-decoration: none;
     }
-	
+
 	</style>
 </head>
 <body>
@@ -135,7 +135,7 @@
 	</div>
 
 	<div class="support-bar">
-		<a class="support-link" href="support.html">Need help? Contact Support</a>
+		<a class="support-link" href="support.jsp">Need help? Contact Support</a>
 	</div>
 </body>
 </html>
