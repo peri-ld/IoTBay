@@ -101,5 +101,10 @@
         <button>Edit</button>
         <button class="browse-button" onclick="window.location.href = 'edit.jsp';">Browse products</button>
     </div>
+
+    <div class="support-bar">
+        <a class="support-link" href="support.html">Need help? Contact Support</a>
+    </div>
+    
     </body>
 </html>

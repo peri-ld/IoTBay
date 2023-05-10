@@ -40,6 +40,10 @@
             <label for = "forgot password">Forgot Password?<a href = "resetPw.html"> find password</a></label>
       </form>
     </div>
+
+    <div class="support-bar">
+      <a class="support-link" href="support.html">Need help? Contact Support</a>
+  </div>
     
   
   
