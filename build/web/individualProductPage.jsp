@@ -1,57 +1,119 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
-    </head>
-    <body>
-        <div class="header">
-                <div class="inner-header">
-                    <div class="logo-container">
-                        
-                    </div>
-                    <div class="navigation">
-                        <div class="index-login-button">
-                            <input type="submit" value="Login" onclick = "window.location.href = 'login.html'">
-                        </div>
-                        <div class="index-register-button">
-                            <input type="submit" value="Register" onclick = "window.location.href = 'register.html'">
-                            <input type="submit" value="Logout" onclick = "window.location.href = 'logout.html'"> <!--conditional login/logout buttons-->
-                        </div>
-                      </div>
-                </div>
-            </div>
-            <div class="upperbodycontainer">
-                <img src="IoT-devices.jpg">
-                <div class="text">
-                    <h1>What are IOT devices?</h1>
-                    <h3>IoT devices are pieces of hardware, such as sensors, 
-                        actuators, gadgets, appliances, or machines that are embedded with sensors, software, and other technologies</h3>
-                </div>
-            </div>
-            <div class="featured-products">
-                <span class="featured-product-title"> FEATURED PRODUCTS</span>
-            </div>
-            <div class="bodycontainer">
-                    <div>
-                        <img src="Photos/Smart-TV.png" alt="Smart-TV">
-                        <p>Smart TV</p>
-                    </div>
-                    <div>
-                        <img src="Photos/Smart-Speaker.png" alt="Smart Speaker">
-                        <p>Smart Speaker</p>
-                    </div>
-                    <div>
-                        <img src="Photos/Smart-Lights.png" alt="Smart Lights">
-                        <p>Smart Lights</p>
-                    </div>
-                    <div>
-                        <img src="Photos/Smart-Thermostat.png" alt="Smart Thermostat">
-                        <p>Smart Thermostat</p>
-                    </div>
-        </div>
-    </body>
-</html> 
+<head>
+	<title>IOTBay Product Page</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin: 50px;
+		}
+		
+		.product-image {
+			flex-basis: 50%;
+			max-width: 500px;
+			margin-right: 50px;
+		}
+		
+		.product-info {
+			flex-basis: 50%;
+			max-width: 500px;
+		}
+		
+		.product-title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.product-description {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		
+		.product-price {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		.product-features {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		
+		.product-features ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.product-features li {
+			margin-bottom: 10px;
+		}
+		
+		.product-features li strong {
+			display: inline-block;
+			width: 100px;
+			font-weight: bold;
+			margin-right: 10px;
+		}
+
+		/* Style for header and menu bar */
+		.header {
+			background-color: #cceeff;
+			color: black;
+			padding: 20px;
+		}
+
+		.menu {
+			display: flex;
+			 justify-content: flex-end;
+		}
+
+		.menu a {
+			color: black;
+			margin-left: 20px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		.menu a:hover {
+			background-color: #1AA7EC;
+			color: #cceeff;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>IOTBay</h1>
+		<nav class="menu">
+			<a href="#">Search</a>
+			<a href="#">Help</a>
+			<a href="#">Account</a>
+			<a href="#">Cart</a>
+			<a href="#">Shop</a>
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="product-image">
+			<img src="Photos/Smart-Speaker.png" alt="Product Name">
+		</div>
+		<div class="product-info">
+			<div class="product-title">IOTBay Device</div>
+			<div class="product-price">$74.99</div>
+			<div class="product-description">This is a device that is sold through IOTBay website :)</div>
+			<div class="product-features">
+				<ul>
+					<li><strong>Quantity </strong> <-  box -> </li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
