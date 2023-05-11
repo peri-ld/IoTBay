@@ -19,7 +19,7 @@
 </head>
 
 <body class="login" bgcolor= #cceeff>
-  <img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style=" width: 80px; float:left; " onclick="window.location.href = 'index.html';" >
+  <img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style=" width: 80px; float:left; " onclick="window.location.href = 'index.jsp';" >
     <div class= "login-wrapper">
       
       <h2>Login</h2>
@@ -39,7 +39,15 @@
 
             <label for = "forgot password">Forgot Password?<a href = "resetPw.html"> find password</a></label>
       </form>
+      
+      <br>
+      <br>
+      <br>
     </div>
+
+    <div class="support-bar">
+      <a class="support-link" href="support.jsp">Need help? Contact Support</a>
+  </div>
     
   
   

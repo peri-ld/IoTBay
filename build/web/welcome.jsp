@@ -69,6 +69,23 @@
             margin: auto;
             margin-top: 30px;
         }
+
+        .support-bar {
+        background-color: #00498c;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .support-link {
+        color: white;
+        text-decoration: none;
+    }
         
     </style>
         <title>Welcome Page</title>
@@ -105,6 +122,11 @@
         <button class="browse-button" onclick="window.location.href = 'index.jsp';">Browse products</button>
         <button onclick="window.location.href = 'main.jsp';">Main Page</button>
     </div>
+
+    <div class="support-bar">
+        <a class="support-link" href="support.jsp">Need help? Contact Support</a>
+    </div>
+
         
     </body>
 </html>

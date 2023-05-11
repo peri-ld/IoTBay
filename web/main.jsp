@@ -76,7 +76,7 @@
     <body bgcolor= #cceeff>
     <div class="top-bar">
         <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;">
-        <button class="logout-button" align="right" onclick="window.location.href = 'logout.html';">Log Out</button>
+        <button class="logout-button" align="right" onclick="window.location.href = 'logout.jsp';">Log Out</button>
     </div>
         
     <%

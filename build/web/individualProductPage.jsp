@@ -85,6 +85,24 @@
 			background-color: #1AA7EC;
 			color: #cceeff;
 		}
+
+		.support-bar {
+        background-color: #00498c;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .support-link {
+        color: white;
+        text-decoration: none;
+    }
+
 	</style>
 </head>
 <body>
@@ -114,6 +132,10 @@
 				</ul>
 			</div>
 		</div>
+	</div>
+
+	<div class="support-bar">
+		<a class="support-link" href="support.jsp">Need help? Contact Support</a>
 	</div>
 </body>
 </html>

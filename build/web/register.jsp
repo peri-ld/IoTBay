@@ -47,9 +47,14 @@
                         <a href="index.jsp">Cancel</a>
                     </div>
                 </div>
+
+                <div class="support-bar">
+                    <a class="support-link" href="support.jsp">Need help? Contact Support</a>
+                </div>
             </form>
         </div>
 
+    
 
 <!--    <div class= "register-container">
         <h2>Registration</h2>
