@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="iotbay.model.User"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,11 +47,11 @@
             </div>
             <div class="bodycontainer">
                     <div>
-                        <img src="Photos/Smart-TV.png" alt="Smart-TV">
+                        <a href="checkout.jsp"><img src="Photos/Smart-TV.png" alt="Smart-TV"></a>
                         <p>Smart TV</p>
                     </div>
                     <div>
-                        <img src="Photos/Smart-Speaker.png" alt="Smart Speaker">
+                        <a href="individualProductPage.jsp"><img src="Photos/Smart-Speaker.png" alt="Smart Speaker"></a>
                         <p>Smart Speaker</p>
                     </div>
                     <div>
