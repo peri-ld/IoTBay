@@ -62,6 +62,8 @@
                         <p>Smart Thermostat</p>
                     </div>
         </div>
-        <input type="submit" value="Contact Us" onclick = "window.location.href = 'support.jsp'">
+        <div class="support-bar">
+            <a class="support-link" href="support.jsp">Need help? Contact Support</a>
+        </div>
     </body>
 </html> 

@@ -23,7 +23,7 @@
     <div class= "login-wrapper">
       
       <h2>Login</h2>
-      <form method="get" action="main.html" id="login-form">
+      <form method="get" action="main.jsp" id="login-form">
         <input type= "text" name="userName" placeholder="email">
         <input type= "text" name="password" name="userPassword" placeholder="password">
         <label for= "remember-check">
@@ -33,13 +33,17 @@
     
         
         </label>
-      
-            <input type = "submit" value = "Login" onclick = "window.location.href = 'main.html'">  
+      <!-- onclick = "window.location.href = 'main.html' (From line below) -->
+            <input type = "submit" value = "Login" "window.location.href = 'main.html'">  
             <label for="register-account">New to IoTBay?<a href ='register.html'> register</a></label> <br>
 
             <label for = "forgot password">Forgot Password?<a href = "resetPw.html"> find password</a></label>
       </form>
     </div>
+
+    <div class="support-bar">
+      <a class="support-link" href="support.html">Need help? Contact Support</a>
+  </div>
     
   
   
