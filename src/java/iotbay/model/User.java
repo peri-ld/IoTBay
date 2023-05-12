@@ -24,7 +24,7 @@ public class User {
         this.email = email;
         this.phone = phone;
         this.password = password;
-        this.userType = userType;
+        this.userType = "customer";
         this.gender = gender;
     }
 
@@ -35,14 +35,14 @@ public class User {
     public void setUserOrder(Order userOrder) {
         this.userOrder = userOrder;
     }
-/* Could You Update this if required for a userType field (User doesn't define it themselves, should default to 'customer'
-    public String getUserID() {
-        return userID;
+   // Could You Update this if required for a userType field (User doesn't define it themselves, should default to 'customer'
+    public String getUserType() {
+        return userType;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
-    } */
+    public void setUserType(String userID) {
+        this.userType = userID;
+    }
 
     public String getFirstName() {
         return firstName;
