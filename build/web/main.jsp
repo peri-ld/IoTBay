@@ -76,7 +76,7 @@
     <body bgcolor= #cceeff>
     <div class="top-bar">
         <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;">
-        <button class="logout-button" align="right" onclick="window.location.href = 'logout.html';">Log Out</button>
+        <button class="logout-button" align="right" onclick="window.location.href = 'logout.jsp';">Log Out</button>
     </div>
         
     <%
@@ -103,8 +103,8 @@
     </div>
 
     <div class="support-bar">
-        <a class="support-link" href="support.html">Need help? Contact Support</a>
+        <a class="support-link" href="support.jsp">Need help? Contact Support</a>
     </div>
-    
+
     </body>
 </html>
