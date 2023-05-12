@@ -4,26 +4,44 @@
  * and open the template in the editor.
  */
 package iotbay.model;
-
 /**
  *
  * @author peril
  */
 public class User {
+    private String userID;
     private String firstName;
     private String lastName;
     private String email;
     private String phone;
     private String gender;
     private String password;
+    private Order userOrder;
 
-    public User(String firstName, String lastName, String email, String phone, String gender, String password) {
+    public User(String userID, String firstName, String lastName, String email, String phone, String gender, String password) {
+        this.userID = userID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phone = phone;
         this.gender = gender;
         this.password = password;
+    }
+
+    public Order getUserOrder() {
+        return userOrder;
+    }
+
+    public void setUserOrder(Order userOrder) {
+        this.userOrder = userOrder;
+    }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
     }
 
     public String getFirstName() {
