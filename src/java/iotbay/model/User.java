@@ -9,23 +9,23 @@ package iotbay.model;
  * @author peril
  */
 public class User {
-    private String userID;
     private String firstName;
     private String lastName;
     private String email;
     private String phone;
-    private String gender;
     private String password;
+    private String userType;
+    private String gender;
     private Order userOrder;
 
-    public User(String userID, String firstName, String lastName, String email, String phone, String gender, String password) {
-        this.userID = userID;
+    public User(String firstName, String lastName, String email, String phone, String password, String userType, String gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phone = phone;
-        this.gender = gender;
         this.password = password;
+        this.userType = userType;
+        this.gender = gender;
     }
 
     public Order getUserOrder() {
@@ -35,14 +35,14 @@ public class User {
     public void setUserOrder(Order userOrder) {
         this.userOrder = userOrder;
     }
-
+/* Could You Update this if required for a userType field (User doesn't define it themselves, should default to 'customer'
     public String getUserID() {
         return userID;
     }
 
     public void setUserID(String userID) {
         this.userID = userID;
-    }
+    } */
 
     public String getFirstName() {
         return firstName;
