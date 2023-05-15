@@ -66,5 +66,6 @@
         <div class="support-bar">
             <a class="support-link" href="support.jsp">Need help? Contact Support</a>
         </div>
+        <jsp:include page="/ConnServlet" flush="true" />
     </body>
 </html> 

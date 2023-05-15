@@ -18,23 +18,27 @@
     
 </head>
 
-<body class="login" bgcolor= #cceeff>
+<body class="login" bgcolor= #cceeff onload="startTime()">
+    <div/><span  class=time" id="time"></span>
+    <%
+        String existErr = (String) session.getAttribute("existErr");
+        String emailErr = (String) session.getAttribute("emailErr");
+        String passErr = (String) session.getAttribute("passErr");
+     %>
   <img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style=" width: 80px; float:left; " onclick="window.location.href = 'index.jsp';" >
     <div class= "login-wrapper">
       
-      <h2>Login</h2>
-      <form method="get" action="main.jsp" id="login-form">
-        <input type= "text" name="userName" placeholder="email">
-        <input type= "text" name="password" name="userPassword" placeholder="password">
+        <h2>Login <span class="message"> <%=(existErr != null ? existErr : "")%></span></h2>
+      <form action="LoginServlet" method="post" id="login-form">
+        <input type= "text" placeholder="<%=(emailErr != null ? emailErr : "Enter email")%>" name="email" required>  <!-- Works for error, may need a better UI design -->
+        <input type= "text" placeholder="<%=(passErr != null ? passErr : "Enter password")%>" name="password" required>
         <label for= "remember-check">
             <input type = "checkbox" id="remember-check"> remember me 
 
-          
-    
-        
         </label>
       <!-- onclick = "window.location.href = 'main.html' (From line below) -->
-            <input type = "submit" value = "Login" "window.location.href = 'main.html'">  
+      <input type = "submit" value = "Login" ><br>
+      <a href="CancelServlet" class="button"> Cancel</a><br>                            <!-- Cancel button (needs work) !-->
             <label for="register-account">New to IoTBay?<a href ='register.html'> register</a></label> <br>
 
             <label for = "forgot password">Forgot Password?<a href = "resetPw.html"> find password</a></label>

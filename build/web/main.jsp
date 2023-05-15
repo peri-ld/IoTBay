@@ -73,7 +73,8 @@
     </style>
         <title>Main Page</title>
     </head>
-    <body bgcolor= #cceeff>
+    <body bgcolor= #cceeffonload="startTime()">
+        <div><span  class=time" id="time"></span></div>
     <div class="top-bar">
         <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;">
         <button class="logout-button" align="right" onclick="window.location.href = 'logout.jsp';">Log Out</button>
@@ -105,6 +106,6 @@
     <div class="support-bar">
         <a class="support-link" href="support.jsp">Need help? Contact Support</a>
     </div>
-
+    <jsp:include page="/LoginServlet" flush="true"/>
     </body>
 </html>
