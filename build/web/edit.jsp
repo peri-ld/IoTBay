@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <%
@@ -28,13 +29,13 @@
                         <tr><td class="input-box"><input name="email" type="email" value="${user.email}" ></td>
                         <td class="input-box"><input name="phone" type="number" value="${user.phone}" ></td></tr>
 
-
+                        <!--not including password/gender change here? Seems to mess up update as blanks are sent for some reason-->
                     </table>
                     
                     
                     <div class="bottom-buttons">
                         <input type="submit" id="update-button" value="Update">
-                        <a href="index.jsp">Cancel</a>
+                        <a href="main.jsp">Cancel</a>
                     </div>
                 </div>
             </form>
@@ -45,7 +46,8 @@
                             String phone = request.getParameter("phone");
                             String gender = request.getParameter("gender");
                             String password = request.getParameter("password");
-                            user = new User(firstName,lastName,email,phone,gender,password);
+                            user = new User(firstName,lastName,email,phone,password,gender);
+                            session.setAttribute("user", user);
                             %>
     </body>
 </html>

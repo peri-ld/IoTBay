@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!-- TODO will have to do something in backend that ends login session -->
 
 <!DOCTYPE html>
 <html>
@@ -43,7 +42,8 @@
 <body bgcolor= #cceeff>
     <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;" onclick="window.location.href = 'index.jsp';">
     <div class="centre">
-    <h1>You have been logged out.</h1> <!--Add name from beans data?-->
+    <h1>You have been logged out.</h1>
+    <% session.invalidate(); %>
         <button onclick="window.location.href = 'index.jsp';">Proceed back to the home page</button>
     </div>
 </body>

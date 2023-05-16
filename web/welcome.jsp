@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="iotbay.model.User"%>
+<%@page import="iotbay.model.*"%>
 <!DOCTYPE html>
 <html>
     <head>

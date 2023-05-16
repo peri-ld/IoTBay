@@ -61,13 +61,36 @@
 
         .details-box {
             max-width: 700px;
-            width: 40%;
-            height: 50%;
+            width: 100%;
+            height: 20%;
             background: #fff;
             padding: 25px 30px;
+            padding-top: 10px;
             border-radius: 5px;
             margin: auto;
             margin-top: 30px;
+            text-align: center;
+        }
+        
+        .support-bar {
+            background-color: #00498c;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        
+        thead {
+            background-color: #f2f2f2;
         }
         
     </style>
@@ -76,7 +99,7 @@
     <body bgcolor= #cceeffonload="startTime()">
         <div><span  class=time" id="time"></span></div>
     <div class="top-bar">
-        <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;">
+        <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:140px;">
         <button class="logout-button" align="right" onclick="window.location.href = 'logout.jsp';">Log Out</button>
     </div>
         
@@ -85,26 +108,20 @@
     %>
         
     <div class="centre">
-        <div><h1>Hi, ${User.firstName} </h1></div>
-        <!--<table id="user_info">
-               <thead><th>First Name</th><th>Last Name</th><th>Email</th><th>Phone</th><th>Gender</th></thead> 
-               <tr><td>${user.firstName}</td><td>${user.lastName}</td><td>${user.email}</td><td>${user.phone}</td><td>${user.gender}</td></tr>
-               </table> -->
+        <div><h1>Welcome back, ${user.firstName} </h1></div>
         <div class="details-box">
-            <h2>Your Account:</h2>
-            <p><br>First Name: ${user.firstName}</p>
-            <p>Last Name: ${user.lastName}</p>
-            <p>Email: ${user.email}</p>
-            <p>Phone Number: ${user.phone}</p>
-            <p>Password: ${user.password}</p>
-            <p>Gender: ${user.gender}</p>
+            <h3>Your Account Details</h3>
+            <table class="user-info">
+                <thead><th>First Name</th><th>Last Name</th><th>Email</th><th>Password</th><th>Phone</th><th>Gender</th></thead> 
+                   <tr><td>${user.firstName}</td><td>${user.lastName}</td><td>${user.email}</td><td>${user.password}</td><td>${user.phone}</td><td>${user.gender}</td></tr>
+            </table>
         </div>
-        <button>Edit</button>
-        <button class="browse-button" onclick="window.location.href = 'edit.jsp';">Browse products</button>
+        <button onclick="window.location.href = 'edit.jsp';">Edit</button>
+        <button class="browse-button" onclick="window.location.href = 'index.jsp';">Browse products</button>
     </div>
 
     <div class="support-bar">
-        <a class="support-link" href="support.jsp">Need help? Contact Support</a>
+        <a class="support-bar" href="support.jsp">Need help? Contact Support</a>
     </div>
     <jsp:include page="/LoginServlet" flush="true"/>
     </body>
