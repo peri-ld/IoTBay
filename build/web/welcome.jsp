@@ -100,12 +100,12 @@
             String gender = request.getParameter("gender");
         %>
         <%
-            User user = new User(firstName, lastName, email, phone, gender, password);
+            User user = new User(firstName, lastName, email, phone, password, gender);
             session.setAttribute("user", user);
         %>
 
     <div class="top-bar">
-        <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;">
+        <img src="Photos/IoTBayLogo.png" alt="Logo" style="width:140px; cursor: pointer;" onclick="window.location.href = 'index.jsp';">
         <button class="logout-button" align="right" onclick="window.location.href = 'logout.html';">Log Out</button>
     </div>
     <div class="centre">

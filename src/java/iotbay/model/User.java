@@ -18,7 +18,7 @@ public class User {
     private String gender;
     private Order userOrder;
 
-    public User(String firstName, String lastName, String email, String phone, String password, String userType, String gender) {
+    public User(String firstName, String lastName, String email, String phone, String password, String gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -91,7 +91,5 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    
     
 }
