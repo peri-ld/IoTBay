@@ -93,6 +93,21 @@
             background-color: #f2f2f2;
         }
         
+        .support-bar {
+        background-color: #00498c;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;}
+
+        .support-link {
+         color: white;
+         text-decoration: none;}
+        
     </style>
         <title>Main Page</title>
     </head>
@@ -119,7 +134,8 @@
         <button onclick="window.location.href = 'edit.jsp';">Edit</button>
         <button class="browse-button" onclick="window.location.href = 'index.jsp';">Browse products</button>
     </div>
-
+        <br>
+        <br>
     <div class="support-bar">
         <a class="support-bar" href="support.jsp">Need help? Contact Support</a>
     </div>
