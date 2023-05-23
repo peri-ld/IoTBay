@@ -171,7 +171,20 @@
                             <td><%= order.getOrderQuantity()%></td>
                             <td><%= order.getItemPrice()%></td>
                             <td><%= order.getOrderTotal()%></td>
-                            <td><%= order.getShipmentId()%></td>        
+                            <td>
+                                <% 
+                                    Integer shipmentId = order.getShipmentId();
+                                    String linkName = "";
+                                    if(shipmentId != 0) {
+                                        linkName += "View";
+                                    } else {
+                                        linkName += "Add";
+                                    }
+                                %>
+                                <a href="shipmentdetails.jsp?orderId=<%= order.getOrderID() %>">
+                                    <%= linkName %>
+                                </a>
+                            </td>        
                         </tr>
                     <%
                         }

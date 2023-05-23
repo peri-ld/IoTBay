@@ -4,6 +4,7 @@ import com.sun.xml.registry.uddi.bindings_v2_2.Phone;
 import iotbay.model.User;
 import iotbay.model.Order;
 import iotbay.model.OrderAndShipmentDetails;
+import iotbay.model.ShipmentDetails;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -75,6 +76,9 @@ public ArrayList<User> fectUsers() throws SQLException {
     return temp;
 }
 
+    /*
+        All order and shipment details related queries
+    */
     public ArrayList<OrderAndShipmentDetails> ordersByEmail(String email) throws SQLException {
         String fetch = 
                 "select * from ORDERS as orders LEFT JOIN SHIPMENT_DETAILS as ship "
@@ -94,7 +98,21 @@ public ArrayList<User> fectUsers() throws SQLException {
         }
         return temp;
     }
-
+    
+    public ShipmentDetails getShipmentDetails(String orderId) throws SQLException {
+        String fetch = "select * from SHIPMENT_DETAILS as ship "
+                + "WHERE ship.ORDERID = '" + orderId + "'";
+        
+        ResultSet rs = st.executeQuery(fetch);
+        
+        while(rs.next()) {
+            Integer shipmentId = rs.getInt(2);
+            Integer method = rs.getInt(3);
+            String address = rs.getString(4);
+            return new ShipmentDetails(orderId, shipmentId, method, address);
+        }
+        return new ShipmentDetails(orderId);
+    }
 }
 
 

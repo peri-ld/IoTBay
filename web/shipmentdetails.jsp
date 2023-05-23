@@ -1,20 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="iotbay.model.dao.DBManager"%>
+<%@page import="iotbay.model.ShipmentDetails"%>
+<%@page import="iotbay.model.User"%>
 <!DOCTYPE html>
 <html>
 <head>
     <title>User Shipment Details</title>
     <style>
-        body {background-color:#cceeff;}
-        
-        </style>
+        body {background-color:#cceeff;}    
+    </style>
     
 </head>
 <body>
+    <%
+        String orderId = request.getParameter("orderId");
+        User user = (User)session.getAttribute("user");
+        DBManager manager = (DBManager) session.getAttribute("manager");
+        ShipmentDetails shipmentDetails = manager.getShipmentDetails(orderId);
+        
+        
+
+    %>
     <h1>User Shipment Details</h1>
 
     <form action="process.jsp" method="POST">
         <label for="orderId">Order ID:</label>
-        <input type="text" id="orderId" name="orderId" required><br><br>
+        <input type="text" id="orderId" name="orderId" value="${orderId}" readonly="readonly"><br><br>
 
         <label for="shipmentMethod">Preferred Shipment Method:</label>
         <select id="shipmentMethod" name="shipmentMethod">

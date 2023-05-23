@@ -17,11 +17,18 @@ public class ShipmentDetails {
     private Integer preferredMethod;
     private String address;
 
-    public ShipmentDetails(Integer shipmentId, String orderId, String address, Integer preferredMethod) {
+    public ShipmentDetails(String orderId, Integer shipmentId, Integer preferredMethod, String address) {
         this.shipmentId = shipmentId;
         this.orderId = orderId;
         this.preferredMethod = preferredMethod;
         this.address = address;
+    }
+    
+    public ShipmentDetails(String orderId) {
+        this.orderId = orderId;
+        this.shipmentId = 0;
+        this.preferredMethod = 0;
+        this.address = "";
     }
     
     /**
