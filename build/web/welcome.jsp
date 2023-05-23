@@ -122,8 +122,7 @@
         <button class="browse-button" onclick="window.location.href = 'index.jsp';">Browse products</button>
         <button onclick="window.location.href = 'main.jsp';">Main Page</button>
     </div>
-        <br>
-        <br>
+
     <div class="support-bar">
         <a class="support-link" href="support.jsp">Need help? Contact Support</a>
     </div>

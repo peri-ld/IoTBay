@@ -63,8 +63,9 @@
 	<div id="topnav">
 		<br>
 		
-			<div class="center" style=" width: 10%; float: left"><a href="main.jsp" target="main"> Main </a>
-				<a href="index.jsp" target="main"> Index </a></div>
+			<div class="center" style=" width: 10%; float: left"><a href="main.html" target="main"> Main </a>
+				&nbsp
+				<a href="index.html" target="main"> Index </a></div>
 			<div class="right" style=" width : 10%; float: right"><a href="logout.html" target="main">Logout</a></div>
 	
 		</div>

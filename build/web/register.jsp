@@ -47,8 +47,7 @@
                         <a href="index.jsp">Cancel</a>
                     </div>
                 </div>
-                <br>
-                <br>
+
                 <div class="support-bar">
                     <a class="support-link" href="support.jsp">Need help? Contact Support</a>
                 </div>

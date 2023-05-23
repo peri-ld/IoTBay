@@ -48,12 +48,7 @@
       <br>
       <br>
     </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
     <div class="support-bar">
       <a class="support-link" href="support.jsp">Need help? Contact Support</a>
   </div>
