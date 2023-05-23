@@ -14,13 +14,15 @@ public class Order {
     private Integer OrderQuantity;
     private Integer ItemPrice;
     private Integer OrderTotal;
+    private String email;
 
-    public Order(String OrderID, String ItemID, Integer OrderQuantity, Integer ItemPrice, Integer OrderTotal) {
+    public Order(String OrderID, String ItemID, Integer OrderQuantity, Integer ItemPrice, Integer OrderTotal, String email) {
         this.OrderID = OrderID;
         this.ItemID = ItemID;
         this.OrderQuantity = OrderQuantity;
         this.ItemPrice = ItemPrice;
         this.OrderTotal = OrderTotal;
+        this.email = email;
     }
 
     public String getOrderID() {
@@ -61,6 +63,20 @@ public class Order {
 
     public void setOrderTotal(Integer OrderTotal) {
         this.OrderTotal = OrderTotal;
+    }
+
+    /**
+     * @return the email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * @param email the email to set
+     */
+    public void setEmail(String email) {
+        this.email = email;
     }
     
 }
