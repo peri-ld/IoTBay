@@ -6,8 +6,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="iotbay.model.User"%>
-<%@page import="iotbay.model.Order"%>
+<%@page import="iotbay.model.OrderAndShipmentDetails"%>
 <%@page import="iotbay.model.dao.DBManager"%>
+<%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -161,8 +162,20 @@
                 <tbody>
                     <%
                         DBManager manager = (DBManager) session.getAttribute("manager");
-                        
+                        ArrayList<OrderAndShipmentDetails> ordersWithShipmentId = manager.ordersByEmail(user.getEmail());
+                        for (OrderAndShipmentDetails order : ordersWithShipmentId) {
                     %>
+                        <tr>
+                            <td><%= order.getOrderID()%></td>
+                            <td><%= order.getItemID()%></td>
+                            <td><%= order.getOrderQuantity()%></td>
+                            <td><%= order.getItemPrice()%></td>
+                            <td><%= order.getOrderTotal()%></td>
+                            <td><%= order.getShipmentId()%></td>        
+                        </tr>
+                    <%
+                        }
+                    %> 
                 </tbody>
             </table>
         </div>

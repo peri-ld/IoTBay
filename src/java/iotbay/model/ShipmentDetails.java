@@ -9,15 +9,19 @@ package iotbay.model;
  * @author nazramahmood
  */
 public class ShipmentDetails {
-    // PrimaryKey should be a composite key of the shipmentId and orderId
-    private Integer shipmentId; 
+    // PrimaryKey should be orderId since each other can only have one or no 
+    // shipment details and vice versa, shipment details specifically apply to
+    // individual orders
     private String orderId;
+    private Integer shipmentId; 
     private Integer preferredMethod;
+    private String address;
 
-    public ShipmentDetails(Integer shipmentId, String orderId, String email, Integer preferredMethod) {
+    public ShipmentDetails(Integer shipmentId, String orderId, String address, Integer preferredMethod) {
         this.shipmentId = shipmentId;
         this.orderId = orderId;
         this.preferredMethod = preferredMethod;
+        this.address = address;
     }
     
     /**
@@ -60,6 +64,20 @@ public class ShipmentDetails {
      */
     public void setPreferredMethod(int preferredMethod) {
         this.preferredMethod = preferredMethod;
+    }
+    
+    /**
+     * @return the address
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * @param address the address to set
+     */
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
 

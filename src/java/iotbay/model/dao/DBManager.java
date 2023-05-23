@@ -3,7 +3,7 @@ package iotbay.model.dao;
 import com.sun.xml.registry.uddi.bindings_v2_2.Phone;
 import iotbay.model.User;
 import iotbay.model.Order;
-import iotbay.model.ShipmentDetails;
+import iotbay.model.OrderAndShipmentDetails;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -75,14 +75,24 @@ public ArrayList<User> fectUsers() throws SQLException {
     return temp;
 }
 
-    public ArrayList<Order> ordersByEmail(String email) throws SQLException {
+    public ArrayList<OrderAndShipmentDetails> ordersByEmail(String email) throws SQLException {
         String fetch = 
-                "select * from ORDERS as orders, SHIPMENT_DETAILS as ship "
-                + "WHERE orders.orderId = ship.orderId AND "
-                + "ship.email = '" + email + "'";
+                "select * from ORDERS as orders LEFT JOIN SHIPMENT_DETAILS as ship "
+                + "ON orders.ORDERID = ship.ORDERID WHERE orders.email = '" + email + "'";
         
         ResultSet rs = st.executeQuery(fetch);
-        ArrayList<Order> temp = new ArrayList();
+        ArrayList<OrderAndShipmentDetails> temp = new ArrayList();
+        
+        while (rs.next()) {
+            String orderId = rs.getString(1);
+            String itemId = rs.getString(3);
+            Integer orderQuantity = rs.getInt(4);
+            Integer itemPrice = rs.getInt(5);
+            Integer orderTotal = rs.getInt(6);
+            Integer shipmentId = rs.getInt(8);
+            temp.add(new OrderAndShipmentDetails(orderId, itemId, orderQuantity, itemPrice, orderTotal, email, shipmentId));
+        }
+        return temp;
     }
 
 }
