@@ -27,6 +27,16 @@ public class User {
         this.userType = "customer";
         this.gender = gender;
     }
+    
+    public User(String firstName, String lastName, String email, String phone, String password, String usertype, String gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+        this.userType = usertype;
+        this.gender = gender;
+    }
 
     public Order getUserOrder() {
         return userOrder;

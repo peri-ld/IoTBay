@@ -6,6 +6,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="iotbay.model.User"%>
+<%@page import="iotbay.model.Order"%>
+<%@page import="iotbay.model.dao.DBManager"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -72,6 +74,19 @@
             text-align: center;
         }
         
+        .orders-table {
+            max-width: 700px;
+            width: 100%;
+            height: 20%;
+            background: #fff;
+            padding: 25px 30px;
+            padding-top: 10px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
         .support-bar {
             background-color: #00498c;
             color: white;
@@ -92,6 +107,21 @@
         thead {
             background-color: #f2f2f2;
         }
+        
+        .support-bar {
+        background-color: #00498c;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;}
+
+        .support-link {
+         color: white;
+         text-decoration: none;}
         
     </style>
         <title>Main Page</title>
@@ -116,10 +146,32 @@
                    <tr><td>${user.firstName}</td><td>${user.lastName}</td><td>${user.email}</td><td>${user.password}</td><td>${user.phone}</td><td>${user.gender}</td></tr>
             </table>
         </div>
+        <div class="orders-table">
+            <table class="order-info">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Item ID</th>
+                        <th>Order Quantity</th>
+                        <th>Item Price</th>
+                        <th>Order Total</th>
+                        <th>Shipment Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%
+                        DBManager manager = (DBManager) session.getAttribute("manager");
+                        
+                    %>
+                </tbody>
+            </table>
+        </div>
+
         <button onclick="window.location.href = 'edit.jsp';">Edit</button>
         <button class="browse-button" onclick="window.location.href = 'index.jsp';">Browse products</button>
     </div>
-
+        <br>
+        <br>
     <div class="support-bar">
         <a class="support-bar" href="support.jsp">Need help? Contact Support</a>
     </div>

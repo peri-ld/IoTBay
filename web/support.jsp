@@ -63,14 +63,13 @@
 	<div id="topnav">
 		<br>
 		
-			<div class="center" style=" width: 10%; float: left"><a href="main.html" target="main"> Main </a>
-				&nbsp
-				<a href="index.html" target="main"> Index </a></div>
+			<div class="center" style=" width: 10%; float: left"><a href="main.jsp" target="main"> Main </a>
+				<a href="index.jsp" target="main"> Index </a></div>
 			<div class="right" style=" width : 10%; float: right"><a href="logout.html" target="main">Logout</a></div>
 	
 		</div>
 		
-	<img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;" onclick="window.location.href = 'index.html';" >
+	<img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;" onclick="window.location.href = 'index.jsp';" >
 	<h1>Contact Support</h1>
 	<p>Please fill out the form below to contact our support team:</p>
 	<form action="submit-form.php" method="post">

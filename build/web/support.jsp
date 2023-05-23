@@ -69,7 +69,7 @@
 	
 		</div>
 		
-	<img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;" onclick="window.location.href = 'index.html';" >
+	<img id="logo-button" src="Photos/IoTBayLogo.png" alt="Logo" style="width:200px;" onclick="window.location.href = 'index.jsp';" >
 	<h1>Contact Support</h1>
 	<p>Please fill out the form below to contact our support team:</p>
 	<form action="submit-form.php" method="post">
